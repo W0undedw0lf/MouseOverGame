@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+#game-board {
+    background-color: beige;
+    display: grid;
+    height: 630px;
+    width: 630px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.target {
+    background-color: rgb(161, 61, 61);
+    border: 1px solid black;
+    
+}
+
+#one {
+    grid-column: 2;
+    grid-row: 2;
+    display: initial;
+}
+
+#two {
+    grid-column: 4;
+    grid-row: 2;
+    display: none;
+}
+
+#three {
+    grid-column: 2;
+    grid-row: 4;
+    display: none;
+}
+
+#four {
+    grid-column: 4;
+    grid-row: 4;
+    display: none;
+}
